@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:movies_app/src/features/movies/presentation/movies/movie_list_tile.dart';
 import 'package:movies_app/src/features/movies/presentation/movies/movie_list_tile_shimmer.dart';
 import 'package:movies_app/src/features/movies/presentation/movies/movies_search_bar.dart';
 import 'package:movies_app/src/features/movies/provider/query_text_state_provider.dart';
 import 'package:movies_app/src/response/get_movie_response.dart';
+import 'package:movies_app/src/routing/app_router.dart';
 
 class MoviesSearchScreen extends ConsumerStatefulWidget {
   const MoviesSearchScreen({super.key});
@@ -70,7 +72,14 @@ class _MoviesSearchScreenState extends ConsumerState<MoviesSearchScreen> {
                       return MovieListTile(
                         movie: filteredMovies[index],
                         debugIndex: index + 1,
-                        onPressed: () {},
+                        onPressed: () {
+                          // Navigate to MovieDetailsScreen and pass the entire movie object
+                          context.pushNamed(
+                            AppRoute.movie.name,
+                            extra: filteredMovies[
+                                index], // Passing the movie object directly
+                          );
+                        },
                       );
                     },
                   );

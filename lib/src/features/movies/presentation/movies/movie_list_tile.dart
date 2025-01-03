@@ -68,6 +68,10 @@ class MovieListTile extends ConsumerWidget {
                   movie.title,
                   style: Theme.of(context).textTheme.titleMedium,
                 ),
+                Text(
+                  "IMDB ID: ${movie.imdbId}",
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
               ],
             ),
           ),
