@@ -5,7 +5,7 @@ import 'package:movies_app/src/features/movies/presentation/movies/movie_list_ti
 import 'package:movies_app/src/features/movies/presentation/movies/movie_list_tile_shimmer.dart';
 import 'package:movies_app/src/features/movies/presentation/movies/movies_search_bar.dart';
 import 'package:movies_app/src/features/movies/provider/query_text_state_provider.dart';
-import 'package:movies_app/src/response/get_movie_response.dart';
+import 'package:movies_app/src/features/movies/provider/get_movie_response.dart';
 import 'package:movies_app/src/routing/app_router.dart';
 
 class MoviesSearchScreen extends ConsumerStatefulWidget {

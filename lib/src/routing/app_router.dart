@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:movies_app/src/features/favorites/presentation/favorites_screen.dart';
-import 'package:movies_app/src/features/movide_details_screen/movie_details_screen.dart';
+import 'package:movies_app/src/features/movie_details_screen/movie_details_screen.dart';
 import 'package:movies_app/src/features/movies/presentation/movies/movies_search_screen.dart';
 import 'package:movies_app/src/response/response.dart';
 import 'package:movies_app/src/routing/scaffold_with_nested_navigation.dart';

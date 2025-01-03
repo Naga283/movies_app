@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:movies_app/src/common_widgets/movie_poster.dart';
-import 'package:movies_app/src/response/favaorite_movie_change_notifier_provider.dart';
+import 'package:movies_app/src/features/favorites/provider/favaorite_movie_change_notifier_provider.dart';
 import 'package:movies_app/src/response/response.dart'; // Import the provider
 
 class MovieDetailsScreen extends ConsumerWidget {

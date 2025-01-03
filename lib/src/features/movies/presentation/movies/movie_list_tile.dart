@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:movies_app/src/common_widgets/movie_poster.dart';
 import 'package:movies_app/src/common_widgets/top_gradient.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:movies_app/src/response/favaorite_movie_change_notifier_provider.dart';
+import 'package:movies_app/src/features/favorites/provider/favaorite_movie_change_notifier_provider.dart';
 import 'package:movies_app/src/response/response.dart'; // import the notifier
 
 class MovieListTile extends ConsumerWidget {
